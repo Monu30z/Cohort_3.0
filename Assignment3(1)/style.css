@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #292929;
+  background: url(background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  /* background-color: rgb(55, 56, 55); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  margin: 10px 0 0 0;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  margin-top: 30px;
+  height: 120px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #cfc9cc;
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #ab546b;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: white;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+nav i {
+  color: white;
+  font-size: 25px;
+}
+
+.hero-section {
+  height: 90%;
+  width: 100%;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  
+}
+
+.hero-logo {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.hero-logo img {
+  height: 330px;
+  width: 430px;
+}
+
+.hero-logo #vert_para{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.hero-logo p {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin: 20px 180px 10px 80px;
+  color: white;
+}
+
+.hero-logo .btns {
+  position: relative;
+  top: -40px;
+  left: 15%;
+  display: flex;
+  gap: 10px;
+}
+
+.btns .btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+}
+.btns .btn i {
+  font-size: 26px;
+  margin-right: 7px;
+}
+
+.btns .btn1 {
+  background: #fdcb65;
+  background: linear-gradient(
+    270deg,
+    rgb(221, 171, 70) 0%,
+    rgba(168, 32, 77, 1) 96%
+  );
+  color: white;
+}
+
+.btns .btn2 {
+  background-color: transparent;
+  border: 2px solid rgba(168, 32, 77, 1);
+  color: white;
+}
+.hero-image {
+  height: 100%;
+  width: 50%;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+
+.hero-image .social-media{
+  position: absolute;
+  right: 80px;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+.hero-image .social-media i{
+  font-size: 25px;
+  color:  rgba(140, 14, 61, 1) ;
+  font-weight: 400;
+}
+
+.cards {
+  height: 200px;
+  width: 80%;
+  background: #8C0E3D;
+background: linear-gradient(61deg, rgba(140, 14, 61, 1) 0%, rgba(54, 7, 44, 1) 96%);
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  height: 150px;
+  /* background-color: #fdcb65; */
+  border-radius: 10px;
+}
+
+.card:nth-child(3) {
+  background: url(https://images.wallpapersden.com/image/download/squid-game-hd-fan-poster_bWVrZWiUmZqaraWkpJRnbmhrrWZramU.jpg);
+  background-size: cover;
+}
+.card:nth-child(1) {
+  background: url(https://connectpedreiras.com.br/wp-content/uploads/2021/11/round-6-playstation-1200x544.jpg);
+  background-size: cover;
+}
+.card:nth-child(2) {
+  background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqaf5o4dJixE3HqmdidpfDu1Sm6apLvacHUS4iNr8Ad_ZQPhuP);
+  background-size: cover;
+}

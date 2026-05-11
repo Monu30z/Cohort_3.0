@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  background: url("./background.png");
+  height: 80%;
+  width: 100%;
+  border-bottom-left-radius: 60% 18%;
+  border-bottom-right-radius: 60% 18%;
+}
+header {
+  width: 100%;
+  height: 10%;
+}
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+nav img {
+  height: 150px;
+  width: 150px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.navbar a {
+  padding: 20px 14px 4px 14px;
+  text-decoration: none;
+  color: white;
+
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.163) 50%,
+    rgba(237, 221, 83, 1) 92%
+  );
+
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  transition: background-size 0.2s ease;
+}
+
+.navbar a:hover {
+  background-size: 100% 100%;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px 0px 0px;
+}
+
+.social-media i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: white;
+}
+
+.social-media i:hover{
+  background-color: rgb(52, 51, 51);
+  color: white;
+}
+main {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+
+.hero-section {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(235, 237, 236, 0.024);
+  color: white;
+  font-family: "Oldenburg", serif;
+}
+main button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,40%);
+  padding: 20px 40px;
+  font-family: 'Times New Roman', Times, serif;
+  background: #F5D273;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  border: none;
+}
+
+main button:hover{
+  background-color: #f5c84c;
+}
+
+
+.hero-section h1 {
+  font-size: 80px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  word-spacing: 50px;
+  font-family: "Oldenburg", serif;
+}
+.hero-section p:nth-child(1) {
+  position: relative;
+  top: -40px;
+  left: 230px;
+}
+.hero-section p:nth-child(3) {
+  position: relative;
+  top: 50px;
+  left: -180px;
+}
+main img {
+  height: 370px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -42%);
+}
+.hero-section2 {
+  height: 60%;
+  position: relative;
+  top: -80px;
+  width: 100%;
+  z-index: -1;
+  background-color: #2C2631;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-section2 h3 {
+  margin-top: 5rem;
+  position: relative;
+  top: 70px;
+  font-size: 50px;
+  color: white;
+   font-family: "Oldenburg", serif;
+}
+.hero-section2 img {
+  height: 200px;
+  width: 65%;
+}
+
+.para{
+  position: relative;
+  top: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 20px;
+
+}
+
+.para .box{
+  width: 30%;
+  color: #8C8B92;
+  padding: 10px 10px;
+}
+
+/* .box:hover{
+  background-color: #101011;
+  box-shadow: 0px 10px 20px 0px rgba(255, 244, 244, 0.574);
+
+} */
