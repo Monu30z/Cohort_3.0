@@ -15,47 +15,62 @@
       body {
         height: 100%;
         width: 100%;
-        font-size: 50px;
       }
-      .main {
+      main{
         height: 100%;
         width: 100%;
-        background-color: #333;
+        background-color: rgb(0, 0, 0);
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,2fr);
-        align-items: center;
-        justify-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 40% 40% 10%;
+        gap: 10px;
       }
-      .box{
-        background-color: rgb(113, 255, 253);
-        height: 200px;
-        width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid black;
+      header{
+        background-color: aquamarine;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    
+      }
+      .lefttop{
+        background-color: rgb(49, 80, 128);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+      }
+      .leftbottom{
+        background-color: rgb(80, 131, 207);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      .right{
+        background-color: indianred;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+ 
+      }
+      footer{
+        background-color: cadetblue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+  
+      }
 
-        /* To center items */
-        /* align-self: center;
-        justify-self: center; */
-      }
   
     </style>
   </head>
   <body>
-    <div class="main">
-     <div class="box">1</div>
-     <div class="box">2</div>
-     <div class="box">3</div>
-     <div class="box">4</div>
-     <div class="box">5</div>
-     <div class="box">6</div>
-     <div class="box">7</div>
-     <div class="box">8</div>
-     <div class="box">9</div>
-     <!-- <div class="box">10</div> -->
-  
-    </div>
+<main>
+  <header>Header</header>
+  <div class="lefttop">lefttop</div>
+  <div class="leftbottom">leftbottom</div>
+  <div class="right">Right</div>
+<footer>footer</footer>
+</main>
   </body>
 </html>
