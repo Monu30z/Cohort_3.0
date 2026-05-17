@@ -19,58 +19,71 @@
       main{
         height: 100%;
         width: 100%;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0); 
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 40% 40% 10%;
-        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "top-center top-center top-center"
+        "left-top center-bottom right-top"
+        "left-bottom center-bottom right-bottom"
+        ;
+        gap: 20px;
+       
       }
-      header{
-        background-color: aquamarine;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    
+      .top-center{
+        background-color: cornflowerblue;
+        /* grid-column: 1/4; */
+      
+        grid-area: top-center;
       }
-      .lefttop{
-        background-color: rgb(49, 80, 128);
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        
-      }
-      .leftbottom{
-        background-color: rgb(80, 131, 207);
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-      }
-      .right{
-        background-color: indianred;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 4;
- 
-      }
-      footer{
-        background-color: cadetblue;
-        grid-column-start: 1;
-        grid-column-end: 3;
-  
-      }
+      .left-top{
+        background-color: rgb(85, 52, 117);
+        /* grid-column: 1/2;
+        grid-row: 2/3; */
 
+        grid-area: left-top;
+      }
+      .left-bottom{
+        background-color: rgb(117, 52, 113);
+        /* grid-column: 1/2;
+        grid-row: 3/4; */
+
+        grid-area: left-bottom;
+      }
+      .center-bottom{
+        background-color: yellowgreen;
+        /* grid-column: 2/3;
+        grid-row: 2/4; */
+
+        grid-area: center-bottom;
+      }
+      .right-top{
+        background-color: rgb(105, 186, 74);
+        /* grid-column: 3/4;
+        grid-row: 2/3; */
+
+        grid-area: right-top;
+      }
+      .right-bottom{
+        background-color: rgb(217, 168, 89);
+        /* grid-column: 3/4;
+        grid-row: 3/4; */
+
+        grid-area: right-bottom;
+      }
+    
   
     </style>
   </head>
   <body>
 <main>
-  <header>Header</header>
-  <div class="lefttop">lefttop</div>
-  <div class="leftbottom">leftbottom</div>
-  <div class="right">Right</div>
-<footer>footer</footer>
+  <div class="top-center"></div>
+  <div class="left-top"></div>
+  <div class="left-bottom"></div>
+  <div class="center-bottom"></div>
+  <div class="right-top"></div>
+  <div class="right-bottom"></div>
 </main>
   </body>
 </html>
