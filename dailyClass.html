@@ -15,52 +15,22 @@
         height : 100%;
         width  : 100%;
     }
-     .main{
-      
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      display: grid;
-      grid-template-columns: 25% 25% 50%;
-      grid-template-rows: 8% 68% 28%;
-      grid-template-areas: 
-      "top top top"
-      "left-top left-top right"
-      "left-bottom-left left-bottom-right right"
-      ;
-      gap: 10px;
-     }
-
-     .top{
-      background-color: coral;
-      grid-area: top;
-     }
-     .left-top{
-      background-color: orange;
-      grid-area: left-top;
-     }
-     .left-bottom-left{
-      background-color: rgb(140, 250, 115);
-      grid-area: left-bottom-left;
+    #parent{
+      height: 200px;
+      width: 200px;
+      background-color: chocolate;
     }
-    .left-bottom-right{
-      background-color: cadetblue;
-      grid-area: left-bottom-right;
-     }
-
-     .right{
-      background-color: skyblue;
-      grid-area: right;
-     }
+    #child{
+      height: 50vw;
+      width: 50vw;
+      background-color: royalblue;
+    }
+    
   </style>
 </head>
 <body>
-  <div class="main">
-    <div class="top"></div>
-    <div class="left-top"></div>
-    <div class="left-bottom-left"></div>
-    <div class="left-bottom-right"></div>
-    <div class="right"></div>
-  </div>
+   <div id="parent">
+    <div id="child"></div>
+   </div>
 </body>
 </html>
