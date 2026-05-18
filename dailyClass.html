@@ -1,89 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-      }
-      main{
-        height: 100%;
-        width: 100%;
-        background-color: rgb(0, 0, 0); 
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas: 
-        "top-center top-center top-center"
-        "left-top center-bottom right-top"
-        "left-bottom center-bottom right-bottom"
-        ;
-        gap: 20px;
-       
-      }
-      .top-center{
-        background-color: cornflowerblue;
-        /* grid-column: 1/4; */
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+        padding : 0;
+        margin :  0;
+        box-sizing : border-box;
+    }
+     
+    html,body{
+        height : 100%;
+        width  : 100%;
+    }
+     .main{
       
-        grid-area: top-center;
-      }
-      .left-top{
-        background-color: rgb(85, 52, 117);
-        /* grid-column: 1/2;
-        grid-row: 2/3; */
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 25% 25% 50%;
+      grid-template-rows: 8% 68% 28%;
+      grid-template-areas: 
+      "top top top"
+      "left-top left-top right"
+      "left-bottom-left left-bottom-right right"
+      ;
+      gap: 10px;
+     }
 
-        grid-area: left-top;
-      }
-      .left-bottom{
-        background-color: rgb(117, 52, 113);
-        /* grid-column: 1/2;
-        grid-row: 3/4; */
+     .top{
+      background-color: coral;
+      grid-area: top;
+     }
+     .left-top{
+      background-color: orange;
+      grid-area: left-top;
+     }
+     .left-bottom-left{
+      background-color: rgb(140, 250, 115);
+      grid-area: left-bottom-left;
+    }
+    .left-bottom-right{
+      background-color: cadetblue;
+      grid-area: left-bottom-right;
+     }
 
-        grid-area: left-bottom;
-      }
-      .center-bottom{
-        background-color: yellowgreen;
-        /* grid-column: 2/3;
-        grid-row: 2/4; */
-
-        grid-area: center-bottom;
-      }
-      .right-top{
-        background-color: rgb(105, 186, 74);
-        /* grid-column: 3/4;
-        grid-row: 2/3; */
-
-        grid-area: right-top;
-      }
-      .right-bottom{
-        background-color: rgb(217, 168, 89);
-        /* grid-column: 3/4;
-        grid-row: 3/4; */
-
-        grid-area: right-bottom;
-      }
-    
-  
-    </style>
-  </head>
-  <body>
-<main>
-  <div class="top-center"></div>
-  <div class="left-top"></div>
-  <div class="left-bottom"></div>
-  <div class="center-bottom"></div>
-  <div class="right-top"></div>
-  <div class="right-bottom"></div>
-</main>
-  </body>
+     .right{
+      background-color: skyblue;
+      grid-area: right;
+     }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="top"></div>
+    <div class="left-top"></div>
+    <div class="left-bottom-left"></div>
+    <div class="left-bottom-right"></div>
+    <div class="right"></div>
+  </div>
+</body>
 </html>
