@@ -1,36 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-        padding : 0;
-        margin :  0;
-        box-sizing : border-box;
-    }
-     
-    html,body{
-        height : 100%;
-        width  : 100%;
-    }
-    #parent{
-      height: 200px;
-      width: 200px;
-      background-color: chocolate;
-    }
-    #child{
-      height: 50vw;
-      width: 50vw;
-      background-color: royalblue;
-    }
-    
-  </style>
-</head>
-<body>
-   <div id="parent">
-    <div id="child"></div>
-   </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      #parent {
+        background-color: lightcoral;
+        display: flex;
+        overflow: hidden;
+      }
+      .inner {
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-shrink: 0;
+        
+        animation-name: anima;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+       
+      }
+      .inner:hover{
+        animation-play-state: paused;
+      }
+      h1{
+        padding: 20px;
+        font-size: 50px;
+        white-space: nowrap;
+       
+      }
+ 
+      @keyframes anima {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div class="inner">
+        <h1>Monu</h1>
+        <h1>Ajay</h1>
+        <h1>Ram</h1>
+        <h1>Shyam</h1>
+        <h1>Vijay</h1>
+        <h1>Dj</h1>
+        <h1>Aman</h1>
+      </div>
+      <div class="inner">
+        <h1>Monu</h1>
+        <h1>Ajay</h1>
+        <h1>Ram</h1>
+        <h1>Shyam</h1>
+        <h1>Vijay</h1>
+        <h1>Dj</h1>
+        <h1>Aman</h1>
+      </div>
+    </div>
+  </body>
 </html>
